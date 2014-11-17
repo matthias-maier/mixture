@@ -1,0 +1,22 @@
+$basic-sprite-layout: smart;
+$basic-sprite-sprite-dimensions: true;
+@import "basic-sprite/*.png";
+
+i.icons {
+  display: inline-block;
+  content: "";
+}
+
+@include all-basic-sprite-sprites;
+
+// ## Funktionierende Abfragen zu Position und Dimension ##
+// .testerle {
+//   // # background-position, height, width
+//   @include basic-sprite-sprites(social_Facebook);
+
+//   // # nur height
+//   height: basic-sprite-sprite-height(social_Facebook);
+
+//   // # nur width
+//   width: basic-sprite-sprite-width(social_Facebook);
+// }

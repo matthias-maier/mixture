@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="de">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>{% block title %}s7 Boilerplate{% endblock %}</title>
+        <link rel="shortcut icon" type="image/ico" href="/favicon.ico" />
+
+        {% comment %} ## Styles ## {% endcomment %}
+        <!-- Bootstrap -->
+        {{ "all.css" | asset_url | stylesheet_tag }}
+
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+
+        <!-- Site -->
+        {% comment %} ## Style block allowing child pages to inject their own styles ## {% endcomment %}
+        {% block styles %}{% endblock %}
+    </head>
+    <body>
+        {% include "header" %}
+        <main>
+            {% comment %} Content block, child page inject content {% endcomment %}
+            {% block content %}{% endblock %}
+        </main>
+        <footer>
+        </footer>
+
+        {% comment %} ## Script block allowing child pages to inject their own scripts ## {% endcomment %}
+        {% block scripts %}{% endblock %}
+        <script>
+            javascript:(function(){var s=document.createElement("script");s.onload=function(){bootlint.showLintReportForCurrentDocument([]);};s.src="https://maxcdn.bootstrapcdn.com/bootlint/latest/bootlint.min.js";document.body.appendChild(s)})();
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        {{ "bootstrap.js" | asset_url | script_tag }}
+    </body>
+</html>
