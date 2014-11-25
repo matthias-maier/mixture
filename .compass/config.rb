@@ -11,6 +11,7 @@ sass_dir = "assets/sass" # update to the path of your sass files.
 images_dir = "assets/img" # update to the path of your image files.
 javascripts_dir = "assets/js" # update to the path of your script files.
 
+# sourcemap = true
 line_comments = true # if debugging (using chrome extension - set this to true)
 cache = false
 relative_assets = true
