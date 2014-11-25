@@ -19,6 +19,7 @@
     "simpleModePartnerServer": null,
     "modelSource": null,
     "domain": null,
+    "sitemap": true,
     "convertHtml": {
         "relativePaths": true
     }
