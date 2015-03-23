@@ -1,62 +1,28 @@
-// @import "bootstrap/bootstrap-compass";
-// This file overwrites the variables in the untouched libraries folder.
-@import "bootstrap_custom/variables";
-@import "font-awesome_custom/variables";
-@import "custom-variables";
+// This file overwrites the variables and functions in the untouched libraries folder.
+// @import "vendor_custom/bootstrap/mixins";
 
+// ## OWN STYLES ##
+@import "variables";
+
+// ## VENDOR STYLES ##
 // ## do not edit these files - START ##
 // untouched versions
-@import "bootstrap/_bootstrap"; // The all.scss-File contains the whole bootstrap content. Wie did not need a seperate bootstrap css file.
-@import "font-awesome/_font-awesome"; // The all.scss-File contains the whole font-awesome content. Wie did not need a seperate font-awesome css file.
+@import "vendor/bootstrap"; // The all.scss-File contains the whole bootstrap content. Wie did not need a seperate bootstrap css file.
+@import "vendor/font-awesome/font-awesome"; // The all.scss-File contains the whole font-awesome content. Wie did not need a seperate font-awesome css file.
+@import "vendor/slick/slick"; // The all.scss-File contains the whole font-awesome content. Wie did not need a seperate font-awesome css file.
+@import "vendor/slick/slick-theme"; // The all.scss-File contains the whole font-awesome content. Wie did not need a seperate font-awesome css file.
 // ## do not edit these files - END ##
 
 
 
+// ## modified vendor files in vendor_custom ##
 
-// ## modified files ##
-
-// Core CSS
-// @import "bootstrap_custom/scaffolding";
-// @import "bootstrap_custom/type";
-// @import "bootstrap_custom/code";
-// @import "bootstrap_custom/grid";
-// @import "bootstrap_custom/tables";
-// @import "bootstrap_custom/forms";
-// @import "bootstrap_custom/buttons";
-
-// Components
-// @import "bootstrap_custom/component-animations";
-// @import "bootstrap_custom/dropdowns";
-// @import "bootstrap_custom/button-groups";
-// @import "bootstrap_custom/input-groups";
-// @import "bootstrap_custom/navs";
-// @import "bootstrap_custom/navbar";
-// @import "bootstrap_custom/breadcrumbs";
-// @import "bootstrap_custom/pagination";
-// @import "bootstrap_custom/pager";
-// @import "bootstrap_custom/labels";
-// @import "bootstrap_custom/badges";
-// @import "bootstrap_custom/jumbotron";
-// @import "bootstrap_custom/thumbnails";
-// @import "bootstrap_custom/alerts";
-// @import "bootstrap_custom/progress-bars";
-// @import "bootstrap_custom/media";
-// @import "bootstrap_custom/list-group";
-// @import "bootstrap_custom/panels";
-// @import "bootstrap_custom/responsive-embed";
-// @import "bootstrap_custom/wells";
-// @import "bootstrap_custom/close";
-
-// Components w/ JavaScript
-// @import "bootstrap_custom/modals";
-// @import "bootstrap_custom/tooltip";
-// @import "bootstrap_custom/popovers";
-// @import "bootstrap_custom/carousel";
+// # BOOTSTRAP #
+// @import "vendor_custom/bootstrap/FILENAME";
 
 
-// ## own styles ##
-@import "custom";
-@import "standard_Classes";
+// ## OWN STYLES ##
+@import "standard_classes";
 // @import "icons";
 
 
@@ -64,5 +30,5 @@
 
 // ## do not edit these files - START ##
 // must be the last imported file
-@import "bootstrap/utilities";
-// ## do not edit these files - END ##
+@import "vendor/bootstrap/utilities";
+// ## do not edit these file - END ##

@@ -9,9 +9,10 @@ project_path =File.expand_path('..',File.dirname(__FILE__))
 css_dir = "assets/css" # update to the path of your css files.
 sass_dir = "assets/sass" # update to the path of your sass files.
 images_dir = "assets/img" # update to the path of your image files.
+fonts_dir = "assets/fonts" # update to the path of your font files. used for slick slider
 javascripts_dir = "assets/js" # update to the path of your script files.
 
 # sourcemap = true
-line_comments = true # if debugging (using chrome extension - set this to true)
+line_comments = false # if debugging (using chrome extension - set this to true)
 cache = false
 relative_assets = true
