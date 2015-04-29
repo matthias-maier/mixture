@@ -1,0 +1,34 @@
+// default content styles
+.content-element {
+    ul {
+        overflow: hidden;
+
+        li {
+            margin-bottom: 10px;
+        }
+    }
+    .img-responsive {
+        margin-bottom: 20px;
+
+        // min width: image size (470px) minus padding left and right (15+15px)
+        @media all and (min-width: 500px) and (max-width: $screen-xs-max) {
+            width: 50%;
+        }
+
+        &.pull-right {
+            margin-left: 20px;
+        }
+
+        &.pull-left {
+            margin-right: 20px;
+        }
+    }
+    &-space-between {
+        margin-top: $content-element-space;
+        margin-bottom: $content-element-space;
+    }
+    &-border-bottom {
+        border-bottom: 1px solid #e5e5e5;
+        padding-bottom: $content-element-space;
+    }
+}

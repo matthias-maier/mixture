@@ -21,17 +21,18 @@
         {% block styles %}{% endblock %}
     </head>
     <body>
-        {% include "component/header" %}
+        <a id="totop"></a>
+        {% comment %}{% include "component/header" %}{% endcomment %}
         <main>
             {% comment %} Content block, child page inject content {% endcomment %}
             {% block content %}{% endblock %}
         </main>
-        <footer>
-        </footer>
+        {% include "module/footer" %}
 
         {% comment %} ## Global script block ## {% endcomment %}
         {{ "jquery.js" | asset_url | script_tag }}
         {{ "bootstrap.js" | asset_url | script_tag }}
+        {{ "components/to-top.js" | asset_url | script_tag }}
         {% comment %} ## Script block allowing child pages to inject their own scripts ## {% endcomment %}
         {% block scripts %}{% endblock %}
     </body>

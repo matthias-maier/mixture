@@ -1,0 +1,48 @@
+.content-element-test-b {
+    $height: 340px;
+    // $text-margin-top: 20px;
+
+    &.row {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    div[class*="col-"] {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    &.with-image {
+        .content-element-test-b-image {
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: $height / 2;
+        }
+        @media (min-width: $screen-sm-min) {
+            .content-element-test-b-image {
+                height: $height;
+            }
+            .textblock {
+                // margin-top: $text-margin-top;
+                max-height: $height;
+                overflow: hidden;
+            }
+        }
+    }
+    .textblock {
+        color: #fff;
+        text-align: center;
+        // font-family: $headings-font-family;
+        // font-size: 18px;
+        // font-weight: $font-style-semi-bold;
+        padding: 50px;
+
+        .head {
+            margin-bottom: $line-height-computed; // fallback if leading p tag is missing
+
+            h2 {
+                margin: 0;
+                color: inherit;
+            }
+        }
+    }
+}

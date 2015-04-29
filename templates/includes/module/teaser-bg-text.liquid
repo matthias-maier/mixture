@@ -1,0 +1,22 @@
+{% assign controls = teaser-bg-text | split:'|' %}
+
+{% comment %}Debug{% endcomment %}
+{% comment %}<ul>
+{% for item in controls %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>{% endcomment %}
+
+<div class="teaser-bg-text" style="background-image: url({{ "1920x458" | placeholder:'85542c','ffffff' }});">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-5 col-md-6 col-sm-7 {% if controls[1] == "img-left" %} pull-left{% else %} pull-right{% endif %}">
+                <div class="textblock{% if controls[0] %} {{controls[0]}}{% endif %}">
+                    <h2>Atemberaubende Naturparadiese H2</h2>
+                    <p class="lead">Reisen Sie bequem mit Bus und Bahn zu malerischen Seen, urigen Wäldern und blühenden Bergwiesen.</p>
+                    <a href="#" class="btn btn-primary" role="button">Infos &amp; Angebote</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

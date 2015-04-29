@@ -1,0 +1,37 @@
+{% comment %}Variable == ' value' or leave blank ''{% endcomment %}
+{% assign content-element-border-bottom = ' content-element-border-bottom' %}
+{% assign content-element-space-between = ' content-element-space-between' %}
+
+<div class="content-element{{ content-element-border-bottom }}{{ content-element-space-between }}">
+    <div class="container-fluid">
+        <h2>Einfach mal radeln</h2>
+        <img src="{{ "470x305" | placeholder }}" alt="" class="img-responsive pull-right">
+        <p class="lead">{{ 1 | lorem_ipsum }}</p>
+        {{ 1 | lorem_ipsum:'p' }}
+        <p><strong>Städte Lorem ipsum:</strong></p>
+        <ul>
+            <li>sadipscing elitr, sed diam nonumy</li>
+            <li>eirmod tempor invidunt ut labore</li>
+            <li>et dolore magna aliquyam erat, sed diam <a href="#">voluptua et dolore</a> magna aliquyam erat, sed diam voluptua et dolore magna aliquyam erat, sed diam voluptua et dolore magna aliquyam erat, sed diam voluptua</li>
+            <li>Lorem ipsum</li>
+        </ul>
+        {{ 2 | lorem_ipsum:'p' }}
+
+        <h3>Lorem ipsum dolor sit amet, consetetur</h3>
+        <img src="{{ "470x305" | placeholder }}" alt="" class="img-responsive pull-left">
+        {{ 4 | lorem_ipsum:'p' }}
+
+        <ol>
+            <li>sadipscing elitr, sed diam nonumy</li>
+            <li>eirmod tempor invidunt ut labore</li>
+            <li>et dolore magna aliquyam erat, sed diam <a href="#">voluptua et dolore</a> magna aliquyam erat, sed diam voluptua et dolore magna aliquyam erat, sed diam voluptua et dolore magna aliquyam erat, sed diam voluptua</li>
+            <li>Lorem ipsum</li>
+            <li>sadipscing elitr, sed diam nonumy</li>
+            <li>eirmod tempor invidunt ut labore</li>
+            <li>et dolore magna aliquyam erat, sed diam <a href="#">voluptua et dolore</a> magna aliquyam erat, sed diam voluptua et dolore magna aliquyam erat, sed diam voluptua et dolore magna aliquyam erat, sed diam voluptua</li>
+            <li>Lorem ipsum</li>
+        </ol>
+
+        <a href="#">Lesen Sie auch diesen interessanten Link</a>
+    </div>
+</div>

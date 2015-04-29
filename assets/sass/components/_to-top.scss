@@ -1,0 +1,18 @@
+.totop {
+    display: block;
+    position: absolute;
+    // height: basic-sprite-sprite-height(totop);
+    // width: basic-sprite-sprite-width(totop);
+    // top: -40px - (basic-sprite-sprite-height(totop));
+    top: -100px;
+    right: $grid-gutter-width / 2;
+    font-size: 60px;
+    line-height: 0;
+    color: black;
+
+    &.fixed-state {
+        position: fixed;
+        top: auto;
+        bottom: 0px;
+    }
+}

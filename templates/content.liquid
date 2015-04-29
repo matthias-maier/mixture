@@ -1,0 +1,19 @@
+{% block content %}
+	{% include "module/breadcrumb" %}
+	<div class="container-fluid">
+	    <h1>H1 Überschrift</h1>
+	</div>
+	{% include "module/teaser-bg-text" with "project-color1-bg|img-right" %} {% comment %}0: background color class | 1: img-right, img-left{% endcomment %}
+	{% include "module/teaser-bg-text" with "project-color1-bg|img-left" %} {% comment %}0: background color class | 1: img-right, img-left{% endcomment %}
+	{% include "module/content-element-default" %}
+	{% include "module/content-element-test" with "true|true|img-right" %} {% comment %}0: add border-bottom | 1: add space between elements | 2: img-right, img-left{% endcomment %}
+	{% include "module/content-element-test" with "false|true|img-left" %} {% comment %}0: add border-bottom | 1: add space between elements | 2: img-right, img-left{% endcomment %}
+	{% include "module/content-element-test-b" with "project-color1-bg|img-left" %} {% comment %}0: background color class | 1. img-right, img-left, false{% endcomment %}
+	{% include "module/content-element-test-b" with "project-color1-bg|img-right" %} {% comment %}0: background color class | 1. img-right, img-left, false{% endcomment %}
+	{% include "module/content-element-test-b" with "project-color1-bg|false" %} {% comment %}0: background color class | 1. img-right, img-left, false{% endcomment %}
+	{% include "module/content-element-test2" with "true|true|img-right" %} {% comment %}0: add border-bottom | 1: add space between elements | 2: img-right, img-left{% endcomment %}
+	{% include "module/content-element-test2" with "true|true|img-left" %} {% comment %}0: add border-bottom | 1: add space between elements | 2: img-right, img-left{% endcomment %}
+	{% include "module/content-element-test2" with "true|true|false" %} {% comment %}0: add border-bottom | 1: add space between elements | 2: img-right, img-left{% endcomment %}
+	{% include "module/content-element-linklist-image" with "false|true|project-color1-bg" %} {% comment %}0: add border-bottom | 1: add space between elements | 2: background color class{% endcomment %}
+	{% include "module/content-element-contact" with "false" %} {% comment %}0: add space between elements{% endcomment %}
+{% endblock %}

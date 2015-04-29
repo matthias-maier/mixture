@@ -19,11 +19,20 @@
 
 // # BOOTSTRAP #
 // @import "vendor_custom/bootstrap/FILENAME";
+@import "vendor_custom/bootstrap/grid";
+@import "vendor_custom/bootstrap/breadcrumb";
 
 
 // ## OWN STYLES ##
 @import "standard_classes";
 // @import "icons";
+@import "module/teaser-bg-text";
+@import "module/content-element-core";
+@import "module/content-element-test";
+@import "module/content-element-test-b";
+@import "module/content-element-linklist-image";
+@import "module/content-element-contact";
+@import "module/footer";
 
 
 

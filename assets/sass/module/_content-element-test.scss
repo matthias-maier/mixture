@@ -1,0 +1,17 @@
+.content-element-test {
+    .head {
+        margin-bottom: $line-height-computed; // fallback if leading p tag is missing
+
+        h2 {
+            margin: 0;
+        }
+    }
+    img.img-responsive {
+        margin-bottom: 0;
+        display: inline-block;
+
+        @media (max-width: $screen-xs-max) {
+            margin-bottom: 22px;
+        }
+    }
+}

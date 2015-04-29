@@ -1,0 +1,37 @@
+.content-element-contact {
+    background-color: #f6f6f6;
+    padding: 60px 0;
+
+    @media all and (max-width: $screen-xs-max) {
+        text-align: center;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+    h3 {
+        margin-top: 0;
+        margin-bottom: 0;
+        font-weight: $font-style-normal;
+    }
+    .img-responsive {
+        display: inline-block;
+        margin-top: 6px;
+        margin-bottom: 0;
+
+        @media all and (min-width: 500px) and (max-width: $screen-xs-max) {
+            width: auto;
+        }
+        @media all and (max-width: $screen-xs-max) {
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+    }
+    p {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

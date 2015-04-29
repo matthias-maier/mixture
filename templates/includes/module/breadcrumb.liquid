@@ -1,0 +1,22 @@
+<div class="container-fluid">
+    <div class="breadcrumb-wrapper hidden-print">
+        {% if breadcrumb-wrapper != 'no-backlink' %}
+            <a class="previous-page-link" href="#"><span>zurück</span></a>
+        {% endif %}
+
+        <ol class="breadcrumb" itemscope itemtype="http://schema.org/BreadcrumbList">
+          <li class="active" itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <a itemprop="item" href="#">
+                <span itemprop="name">Homepage</span>
+            </a>
+            <meta itemprop="position" content="1">
+          </li>
+          <li itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+            <span itemprop="item">
+                <span itemprop="name">Bahn &amp; Hotel - Auswahl</span>
+            </span>
+            <meta itemprop="position" content="2">
+          </li>
+        </ol>
+    </div>
+</div>

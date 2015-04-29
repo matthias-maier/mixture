@@ -1,0 +1,31 @@
+{% assign controls = content-element-test-b | split:'|' %}
+
+{% comment %}Debug{% endcomment %}
+{% comment %}<ul>
+{% for item in controls %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>{% endcomment %}
+
+<div class="row content-element-test-b{% if controls[0] %} {{controls[0]}}{% endif %}{% if controls[1] != "false" %} with-image{% endif %}">
+{% if controls[1] == "img-left" %}
+    <div class="col-sm-5 content-element-test-b-image" style="background-image: url({{ "800x340" | placeholder:'0089EA','FFFFFF' }});">&nbsp;</div>
+{% elseif controls[1] == "img-right" %}
+    <div class="col-sm-5 col-sm-push-7 content-element-test-b-image" style="background-image: url({{ "800x340" | placeholder:'0089EA','FFFFFF' }});">&nbsp;</div>
+{% endif %}
+
+{% if controls[1] != "false" %}
+    <div class="col-sm-7 col-lg-5{% if controls[1] == "img-right" %} col-lg-offset-2 col-sm-pull-5{% endif %}">
+{% else %}
+    <div class="col-md-8 col-md-offset-2 col-lg-6 col-lg-offset-3">
+{% endif %}
+        <div class="textblock">
+            <div class="head">
+                <h2>Al Andalus Express H2</h2>
+                <p class="lead">Textbox mit optionalem Bild</p>
+            </div>
+            {{ 1 | lorem_ipsum:'p' }}
+            <a role="button" class="btn btn-primary" href="#">Infos &amp; Tipps</a>
+        </div>
+    </div>
+</div>

@@ -44,3 +44,13 @@
 // .vHidden { visibility: hidden !important; }
 
 // .wsNowrap { white-space: nowrap !important; }
+
+@media (max-width: $screen-xs-max) {
+    .col-xs-full-width {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.project-color1 	{ color: $project-color1; }
+.project-color1-bg 	{ background-color: $project-color1; }

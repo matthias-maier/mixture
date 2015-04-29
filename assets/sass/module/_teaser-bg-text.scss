@@ -1,0 +1,40 @@
+.teaser-bg-text {
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media (min-width: $screen-sm-min) {
+        height: 458px;
+    }
+
+    .textblock {
+        color: #fff;
+        text-align: center;
+        font-family: $headings-font-family;
+        padding: 30px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+
+        @media (min-width: $screen-sm-min) {
+            margin-top: 100px;
+            margin-bottom: 0;
+        }
+
+        .lead {
+            color: inherit;
+        }
+
+        // custom cd background colors
+        &.am-hp-yellow      { background-color: transparentize($project-color1, 0.25); }
+        // &.am-hp-orange      { background-color: transparentize($am-hp-orange, 0.25); }
+        // &.am-hp-cyclam      { background-color: transparentize($am-hp-cyclam, 0.25); }
+        // &.am-hp-purple      { background-color: transparentize($am-hp-purple, 0.25); }
+        // &.am-hp-lightblue   { background-color: transparentize($am-hp-lightblue, 0.25); }
+        // &.am-hp-turquoise   { background-color: transparentize($am-hp-turquoise, 0.25); }
+        // &.am-hp-green       { background-color: transparentize($am-hp-green, 0.25); }
+    }
+    h2 {
+        color: inherit;
+        margin-top: 0;
+    }
+}

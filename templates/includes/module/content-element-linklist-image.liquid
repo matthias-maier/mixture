@@ -1,0 +1,30 @@
+{% assign controls = content-element-linklist-image | split:'|' %}
+
+{% comment %}Debug{% endcomment %}
+{% comment %}<ul>
+{% for item in controls %}
+    <li>{{ item }}</li>
+{% endfor %}
+</ul>{% endcomment %}
+
+<div class="content-element-linklist-image{% if controls[0] == "true" %} content-element-border-bottom{% endif %}{% if controls[1] == "true" %} content-element-space-between{% endif %}">
+    <div class="container-fluid">
+        <div class="row">
+        {% for i in (1..6) %}
+            <div class="col-sm-6 col-md-4 content-element-linklist-image-item">
+                <div class="row">
+                    <div class="col-sm-5">
+                        <div class="content-element-linklist-image-img">
+                            <img src="{{ "130" | placeholder }}" alt="" class="img-circle">
+                        </div>
+                    </div>
+                    <div class="col-sm-7">
+                        <span class="content-element-linklist-image-headline{% if controls[2] %} {{controls[2]}}{% endif %}">Al Andalus Express</span><br>
+                        <a href="#" class="link">Lorem ipsum dolor</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+        </div>
+    </div>
+</div>
