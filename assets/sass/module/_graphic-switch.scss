@@ -1,0 +1,42 @@
+.graphic-switch {
+	.btn {
+		@include box-shadow(none);
+		@include border-radius(15px); // element height / 2
+		border: none;
+		text-transform: none;
+		font-size: 16px;
+		line-height: 0;
+		padding-left: 5px;
+		padding-top: 4px;
+		padding-bottom: 4px;
+		color: white;
+		background-color: $color12;
+
+		&:before {
+			$dimension: 21px;
+
+			display: inline-block;
+			width: $dimension;
+			height: $dimension;
+			position: relative;
+			content: $fa-var-check;
+			background-color: $color7;
+			font-family: FontAwesome;
+			font-size: 13px;
+			line-height: $dimension;
+			color: $color7;
+			@include border-radius($dimension / 2);
+		}
+		&.active {
+			background-color: $color13;
+
+			&:before {
+				color: $color10;
+				background-color: white;
+			}
+		}
+		.labelcontent {
+			margin-left: 5px;
+		}
+	}
+}
